@@ -30,3 +30,48 @@ Logic and perfomance optimization
 
 10. Think about other topics
 */
+
+
+const global = {
+  page_lang: 'en'
+}
+
+// Fetch local json (english or swedish) 
+async function fetchLocalJson() {
+  const res = await fetch(`./src/data/translation/${global.page_lang}.json`);
+  const data = await res.json();
+  console.log(data);
+  populateEl(data);
+}
+
+function populateEl(obj) {
+   const header = document.createElement("header");
+   header.textContent = obj.lang_herobtn_standard;
+   document.querySelector('.test').appendChild(header);
+}
+
+fetchLocalJson();
+
+
+// class Component {
+//    #children = [];
+//    #node = null;
+//    constructor({tag = 'div', className = '', text = ''}, ...children) {
+//       const node = document.createElement(tag);
+//       node.className = className;
+//       node.textContent = text;
+//       this.#node = node;
+
+//       if (children) {
+//          this.appendChildren(children);
+//       }
+//    }
+// }
+
+// const newEl = new Component({
+//    tag: 'header',
+//    className: 'newElTest',
+//    text: 'content'
+// })
+
+
