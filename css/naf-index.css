@@ -40,6 +40,14 @@
     background-position: center; */
 }
 
+.naf-hero {
+    display: none; /* Hide background image by default */
+}
+
+.naf-hero.active {
+    display: block; /* Show only if no video is loaded */
+}
+
 .ovingsbaner .hero-section .naf-hero {
 	background-image: url(../files/Øvingsbaner.jpg);
 }
