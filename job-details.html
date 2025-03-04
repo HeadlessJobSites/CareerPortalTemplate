@@ -206,7 +206,6 @@
     </div>
 
 
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const params = new URLSearchParams(window.location.search);
@@ -222,9 +221,8 @@
                         // Check the occupation_area_id and modify the hero section if it's 28
                         if (job.occupation_area_id === 28) {
                             const heroSection = document.querySelector('.hero-section');
-                            // heroSection.classList.add('no-before');
                             heroSection.innerHTML = `
-                       
+                        <div class="naf-hero"></div>
                         <video playsinline autoplay loop muted class="hero-video">
                             <source src="./files/NAF-senterne.mp4" type="video/mp4">
                         </video>
@@ -233,7 +231,8 @@
                             <p id="position-title-meta" style="font-size: 1.25rem;">
                                 <span class="organization-unit"> </span> • <span class="city"> </span>
                             </p>
-                        </div>`;
+                        </div>
+                    `;
                         }
                     } else {
                         console.error('Job not found.');
