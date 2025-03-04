@@ -767,6 +767,10 @@ font-size: 1.8rem;
     font-weight: 500;
 }
 
+
+.remove-before {
+  content: none;
+}
 	    
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
