@@ -80,7 +80,7 @@
     height: auto;
     transform: translate(-50%, -50%);
     z-index: -1; /* Ensures the background is below the overlay */
-}/*
+}
 .hero-video {
 	position: absolute;
 	top: 50%;
@@ -92,7 +92,7 @@
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	background-color: #2b2940;
-}*/
+}
 .hero-content {
 	position: relative;
 	text-align: center;
@@ -768,9 +768,6 @@ font-size: 1.8rem;
 }
 
 
-.remove-before {
-  content: none;
-}
 	    
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
