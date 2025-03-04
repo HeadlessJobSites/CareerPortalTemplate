@@ -233,7 +233,7 @@
                                 <span class="organization-unit"> </span> • <span class="city"> </span>
                             </p>
                         </div>`;
-                            window.getComputedStyle(heroSection, ':before').content = null;
+                            document.querySelector('.naf-hero').style.background = 'none';
                         }
                     } else {
                         console.error('Job not found.');
