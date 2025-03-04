@@ -21,7 +21,7 @@
     height: auto;
     transform: translate(-50%, -50%);
     z-index: -1;
-	background: url(../files/NAF-forside.jpg);
+	background-image: url(../files/NAF-forside.jpg);
 	background-size: cover;
     background-position: center;
 }
