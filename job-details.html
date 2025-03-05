@@ -197,7 +197,13 @@
 
 
     <div class="hero-section">
-
+        <div class="naf-hero">
+        </div>
+        <div class="hero-content">
+            <div class="job-title2" id="position-title"> </div>
+            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
+        </div>
+        <img src="./files/NAF-logo.jpeg" alt="NAF Logo" class="hero-logo">
     </div>
 
 
@@ -207,6 +213,7 @@
             const params = new URLSearchParams(window.location.search);
             const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
             const heroSection = document.querySelector('.hero-section');
+            const nafHero = document.querySelector('.naf-hero');
 
             // Set default background image via JS (not in HTML)
             // heroBackground.classList.add('image-bg');
@@ -220,26 +227,13 @@
 
                         // Check the occupation_area_id and modify the hero section if it's 28
                         if (job.occupation_area_id === 28) {
-                            heroSection.innerHTML = `
-                            <div class="naf-hero">
-                                <video playsinline autoplay loop muted class="hero-video">
+                            nafHero.innerHTML = `
+                            <video playsinline autoplay loop muted class="hero-video">
                                 <source src="./files/NAF-senterne.mp4" type="video/mp4">
                             </video>
-                            </div>
-                            <div class="hero-content">
-                                <div class="job-title2" id="position-title"> </div>
-                                <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
-                            </div>
-                            <img src="./files/NAF-logo.jpeg" alt="NAF Logo" class="hero-logo">`;
+                            `;
                         } else {
-                            heroSection.innerHTML = `
-                            <div class="naf-hero image-bg">
-                            </div>
-                            <div class="hero-content">
-                                <div class="job-title2" id="position-title"> </div>
-                                <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
-                            </div>
-                            <img src="./files/NAF-logo.jpeg" alt="NAF Logo" class="hero-logo">`;
+                            nafHero.classList.add(image - bg);
                         }
                     } else {
                         console.error('Job not found.');
