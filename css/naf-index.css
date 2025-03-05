@@ -11,7 +11,8 @@
     top: 40%;
     transform: translateY(-40%);
 } 
-.hero-section .naf-hero {
+/* .hero-section  */
+.naf-hero {
     position: absolute;
     top: 50%;
     left: 50%;
