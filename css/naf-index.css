@@ -22,10 +22,18 @@
     height: auto;
     transform: translate(-50%, -50%);
     z-index: -1;
-	background: url(../files/NAF-forside.jpg);
+	background: #2b2940;
 	background-size: cover;
     background-position: center;
 }
+
+/* Default background image class (only applied via JS) */
+.naf-hero.image-bg {
+    background: url(../files/NAF-forside.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .ovingsbaner .hero-section .naf-hero {
 	background-image: url(../files/Øvingsbaner.jpg);
 }
