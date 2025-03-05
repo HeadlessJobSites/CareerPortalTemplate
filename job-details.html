@@ -206,54 +206,43 @@
     </div>
 
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const params = new URLSearchParams(window.location.search);
             const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
-
-            const heroSection = document.querySelector('.hero-section');
-            const defaultHero = document.querySelector('.naf-hero'); // Background image
 
             fetch('https://api.talentech.io/reachmee/feed/naf')
                 .then(response => response.json())
                 .then(jobs => {
                     const job = jobs.find(job => job.ad_id === jobId);
                     if (job) {
+                        // Your existing code to populate job details...
+
+                        // Check the occupation_area_id and modify the hero section if it's 28
                         if (job.occupation_area_id === 28) {
-                            // Replace the default background with video
+                            const heroSection = document.querySelector('.hero-section');
                             heroSection.innerHTML = `
-                        <div class="naf-hero-video"></div> <!-- Neutral Background -->
+                        <div class="naf-hero"></div>
                         <video playsinline autoplay loop muted class="hero-video">
                             <source src="./files/NAF-senterne.mp4" type="video/mp4">
                         </video>
                         <div class="hero-content">
-                            <div class="job-title2" id="position-title"></div>
+                            <div class="job-title2" id="position-title"> </div>
                             <p id="position-title-meta" style="font-size: 1.25rem;">
-                                <span class="organization-unit"></span> • <span class="city"></span>
+                                <span class="organization-unit"> </span> • <span class="city"> </span>
                             </p>
-                        </div>`;
-                        } else {
-                            // Ensure the default background image remains for other pages
-                            if (defaultHero) {
-                                defaultHero.style.display = "block";
-                            }
+                        </div>
+                    `;
                         }
                     } else {
                         console.error('Job not found.');
-                        if (defaultHero) {
-                            defaultHero.style.display = "block"; // Restore default background if error occurs
-                        }
                     }
                 })
                 .catch(error => {
                     console.error('Error fetching job details:', error);
-                    if (defaultHero) {
-                        defaultHero.style.display = "block"; // Show default image if fetch fails
-                    }
                 });
         });
-
-
     </script>
 
     <div id="tt-job-section" class="job-section">
