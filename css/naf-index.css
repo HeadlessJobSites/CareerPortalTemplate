@@ -33,6 +33,12 @@
     background-size: cover;
     background-position: center;
 }
+.naf-hero.hero-front {
+    background: url(../files/NAF-forside.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 .ovingsbaner .hero-section .naf-hero {
 	background-image: url(../files/Øvingsbaner.jpg);
