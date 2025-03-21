@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ledige stillinger</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://career.talentech.com/css/index-style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://career.talentech.com/css/index-style.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="icon" type="image/x-icon" href="./files/cropped-favicon-1.png">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
   <script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -41,19 +43,21 @@
       <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
-      <h1 class="hero-title">Join our <span style="font-weight: 800;">journey</span></h1>
+      <h1 class="hero-title">Join our <span class="text-bold">journey</span></h1>
       <a class="btn btn-primary btn-lg" href="#jobs-anchor"><strong>See available positions</strong></a>
     </div>
   </section>
 
   <!-- About company section -->
   <section class="about-section" id="company-section">
-    <div class="container about-container">
+    <div class="container about-container section-container">
       <div class="about-inner">
         <h2 class="about-title section-title">Life at <span style="font-weight: 800;">Talentech</span></h2>
         <div class="about-content">
-          <p class="about-text">Talentech has set out to become the largest and most innovative HR tech company of its kind. The product suite today spans the entire talent pipeline from recruitment, to onboarding and talent management with our products Talent Recruiter, ReachMee, Webcruiter, Talmundo, Weekli, irecommend and ontame.</p>
-          <p class="about-text">We know that great HR makes a difference and we want to be a part of shaping the future with the vision that all companies should know that Talent Comes First. To reach our goals we need you! Talentech as a workplace is characterized by a lot of great and engaged colleges that really believe in what we do.</p>
+          <div class="about-text">
+            <p class="about-text-item">Talentech has set out to become the largest and most innovative HR tech company of its kind. The product suite today spans the entire talent pipeline from recruitment, to onboarding and talent management with our products Talent Recruiter, ReachMee, Webcruiter, Talmundo, Weekli, irecommend and ontame.</p>
+            <p class="about-text-item">We know that great HR makes a difference and we want to be a part of shaping the future with the vision that all companies should know that Talent Comes First. To reach our goals we need you! Talentech as a workplace is characterized by a lot of great and engaged colleges that really believe in what we do.</p>
+          </div>
           <div class="video-container">
             <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
               <source src="./files/This-is-us-TT.mp4" type="video/mp4">
@@ -70,7 +74,7 @@
 
   <!-- Feature (emploees) section -->
   <section class="feature-section">
-    <div class="container feature-container">
+    <div class="container feature-container section-container">
       <div class="feature-inner">
         <h2 class="feature-title section-title">Our <span style="font-weight: 800;">culture</span></h2>
         <div class="feature-content">
@@ -105,7 +109,7 @@
 
   <!-- Quote section -->
   <section class="quote-section">
-    <div class="container quote-container">
+    <div class="container quote-container section-container">
       <div class="quote-inner">
         <blockquote class="blockquote">
           <p class="blockquote-main">"Starting at Talentech, I immediately felt welcomed and part of a dynamic, innovative team."</p>
@@ -117,7 +121,7 @@
 
   <!-- Process (recruitment) section -->
   <section class="process-section" id="process">
-    <div class="container process-container">
+    <div class="container process-container section-container">
       <div class="process-inner">
         <h2 class="process-title section-title">Our <span style="font-weight: 800;">recruitment process</span></h2>
         <div class="process-content">
@@ -151,7 +155,7 @@
 
   <!-- Job categories (areas of business) section -->
   <section class="job-categories-section">
-    <div class="container job-categories-container">
+    <div class="container job-categories-container section-container">
       <div class="job-categories-inner">
         <h2 class="job-categories-title section-title">Job <span style="font-weight: 800;">categories</span></h2>
         <div class="job-categories-content">
@@ -169,7 +173,7 @@
 
   <!-- Benefits section -->
   <section class="benefits-section" id="benefits">
-    <div class="container benefits-container">
+    <div class="container benefits-container section-container">
       <div class="benefits-inner">
         <h2 class="benefits-title section-title">Some of our <span style="font-weight: 800;">local Benefits</span></h2>
         <div class="benefits-content">
@@ -203,7 +207,7 @@
 
   <!-- Available jobs section -->
   <section class="jobs-section" id="available-jobs">
-    <div class="container jobs-container">
+    <div class="container jobs-container section-container">
       <div class="jobs-inner">
         <h2 class="jobs-title section-title">Available <span style="font-weight: 800;">jobs</span></h2>
         <div class="jobs-content">
@@ -232,7 +236,7 @@
 
   <!-- Subscription section -->
   <section class="subscription-section" id="subscription">
-    <div class="container subscription-container">
+    <div class="container subscription-container section-container">
       <div class="subscription-inner">
         <h2 class="subscription-title section-title">Couldn't find the job you were looking for?</h2>
         <div class="subscription-content">
