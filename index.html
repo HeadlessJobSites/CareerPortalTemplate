@@ -8,7 +8,6 @@
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="https://career.talentech.com/css/index-style.css"> -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/reset.css">
   <link rel="icon" type="image/x-icon" href="./files/cropped-favicon-1.png">
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
@@ -37,6 +36,35 @@
 
 <body>
 
+  <header class="site-header">
+    <nav class="primary-nav" style="position: fixed;z-index: 2;">
+      <div class="container">
+        <a class="header-logo" href="/" aria-label="Home">
+          <img class="header-logo-image" src="/files/TT-2.png" height="40" alt="Talentech Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-inner" id="navbarNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="/#jobs-anchor">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#ttteam">Meet the Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#recruitment-process">Recruitment Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="blank" href="https://talentech.com">talentech.com <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <!-- Hero section -->
   <section class="hero-section">
     <video playsinline autoplay loop muted class="hero-video">
@@ -52,20 +80,20 @@
   <section class="about-section" id="company-section">
     <div class="container about-container section-container">
       <div class="about-inner">
-        <h2 class="about-title section-title">Life at <span style="font-weight: 800;">Talentech</span></h2>
         <div class="about-content">
+          <h2 class="about-title section-title">Life at <span style="font-weight: 800;">Talentech</span></h2>
           <div class="about-text">
             <p class="about-text-item">Talentech has set out to become the largest and most innovative HR tech company of its kind. The product suite today spans the entire talent pipeline from recruitment, to onboarding and talent management with our products Talent Recruiter, ReachMee, Webcruiter, Talmundo, Weekli, irecommend and ontame.</p>
             <p class="about-text-item">We know that great HR makes a difference and we want to be a part of shaping the future with the vision that all companies should know that Talent Comes First. To reach our goals we need you! Talentech as a workplace is characterized by a lot of great and engaged colleges that really believe in what we do.</p>
           </div>
-          <div class="video-container">
-            <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
-              <source src="./files/This-is-us-TT.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="video-controls">
-              <button id="muteBtn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
-            </div>
+        </div>
+        <div class="video-container">
+          <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
+            <source src="./files/This-is-us-TT.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-controls">
+            <button id="muteBtn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
           </div>
         </div>
       </div>
