@@ -6,6 +6,9 @@
   * {
     margin: 0;
   }
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -26,9 +29,12 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
+  ul {
+    list-style: none;
+  }
 }
 
-/* Include fonts */
+/** Include fonts **/
 @layer fonts {
   @font-face {
     font-family: 'Telegraf';
@@ -92,12 +98,14 @@
 @layer base {
   :root {
     /* Colors */
-    --primary-text-color: #fff;
-    --white-text-color: #fff;
+    --text-color-primary: #fff;
+    --text-color-white: #fff;
     --btn-text-color: #fff;
     --btn-bkg-color: #2b293f;
     --bkg-color-white: #fff;
     --bkg-color-gray: #fff;
+    --bkg-color-dark: #101018;
+    --bkg-color-gray-50: rgb(0, 0, 0, 0.5);
   
     /* Fonts */
     --font-family: 'Telegraf', sans-serif;
@@ -151,13 +159,46 @@
 }
 
 @layer components {
+  /** Header **/
+  .site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+  /* Navbar */
+  .primary-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
 
+  .navbar-toggler {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    background: var(--bkg-color-gray-50);
+    color: var(--bkg-color-white);
+    border-radius: 10px;
+    padding-inline: 1rem;
+  }
+  .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+  }
 }
 
 /* Helper classes */
 @layer utilities {
   .text-bold {
     font-weight: 800;
+  }
+  .bg-dark {
+    background-color: var(--bkg-color-dark);
   }
 }
 
@@ -213,7 +254,7 @@
 	text-align: center;
 	top: 50%;
 	transform: translateY(-50%);
-	color: var(--white-text-color);
+	color: var(--text-color-white);
 }
 
 .hero-title {
