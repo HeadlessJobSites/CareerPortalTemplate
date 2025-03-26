@@ -105,7 +105,10 @@
     --text-color-main: #000000;
     --text-color-white: #ffffff;
     --btn-text-color: #ffffff;
-    --btn-background-color: #2b293f;
+
+    /* Color for btns & quote section */
+    --brand-background-color: #2b293f;
+
     --background-color-white: #fff;
     --background-color-gray: #fff;
     --background-color-dark: #101018;
@@ -124,7 +127,7 @@
     --font-size-regular: 1rem;
     --font-size-md: 1.1rem;
     --font-size-lg: 1.25rem;
-    --font-size-xl: 1.7rem;
+    --font-size-xl: 2.5rem;
   
     /* Spaces */
     --section-block-padding: 3rem;
@@ -136,7 +139,7 @@
     --border-radius-2: 1rem;
 
 
-    @media (width < 768px) {
+    @media (width <= 768px) {
       --section-block-padding: 1.5rem;
       --heading-block-margin: 1.5rem;
       --text-block-margin: 1.5rem;
@@ -150,8 +153,8 @@
       --font-size-sm: 0.7rem;
       --font-size-regular: 1rem;
       --font-size-md: 1rem;
-      --font-size-lg: 1.25rem;
-      --font-size-xl: 1.7rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.5rem;
     }
   }
 }
@@ -413,3 +416,37 @@
     max-width: 58.33%;
   }
 }
+
+/* Quote section */
+.quote-section {
+  background-color: var(--brand-background-color);
+  color: var(--text-color-white);
+  padding: 3.75rem 1.25rem;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.blockquote-main {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.blockquote-footer {
+  font-size: var(--font-size-lg);
+}
+
+.blockquote-footer::before {
+  content: "\2014\00A0";
+}
+
