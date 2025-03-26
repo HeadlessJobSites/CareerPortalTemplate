@@ -32,6 +32,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+    line-height: 1.2;
   }
   ul {
     list-style: none;
@@ -102,7 +103,7 @@
 @layer base {
   :root {
     /* Colors */
-    --text-color-main: #000000;
+    --text-color-main: #212529;
     --text-color-white: #ffffff;
     --btn-text-color: #ffffff;
 
@@ -110,18 +111,22 @@
     --brand-background-color: #2b293f;
 
     --background-color-white: #fff;
-    --background-color-gray: #fff;
+    --background-color-gray: #eeeef2;
     --background-color-dark: #101018;
     --background-color-gray-50: hsla(0, 0%, 0%, 0.5);
-    --background-color-gray-62: hsla(0, 0%, 0%, 0.62);;
+    --background-color-gray-62: hsla(0, 0%, 0%, 0.62);
+
+    /* Trnasitions */
   
     /* Fonts */
-    --font-family: 'Telegraf', sans-serif;
+    --font-family-brand: 'Telegraf', sans-serif;
+    --font-family-general: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     --font-size-heading-sm: 1rem;
     --font-size-heading-regular: 1.5rem;
     --font-size-heading-lg: 3rem;
     --font-size-heading-xl: 4rem;
+    --font-size-heading-xxl: 4.5rem;
 
     --font-size-sm: 0.8rem;
     --font-size-regular: 1rem;
@@ -149,6 +154,7 @@
       --font-size-heading-regular: 1.5rem;
       --font-size-heading-lg: 2.3rem;
       --font-size-heading-xl: 3.5rem;
+      --font-size-heading-xxl: 4.5rem;
   
       --font-size-sm: 0.7rem;
       --font-size-regular: 1rem;
@@ -162,7 +168,8 @@
 /** General basic styles **/
 @layer generic {
   body {
-    font-family:  var(--font-family);
+    font-family:  var(--font-family-general);
+    color: var(--text-color-main);
   }
 
   a {
@@ -450,3 +457,77 @@
   content: "\2014\00A0";
 }
 
+
+ /* Process (recruitment) section */
+.process-section {
+  background-color: var(--background-color-gray);
+}
+
+/* Container for gobi stroies on left, and cards on right */
+.process-content {
+  display: flex;
+  /* align-items: center; */
+  gap: 4rem;
+}
+
+.process-elements {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 5.5rem;
+  padding-block-start: 2.3rem;
+  padding-block-end: 3rem;
+}
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-white);
+  padding: 3.125rem 1.5rem 1.5rem;
+  border-radius: 10px;
+  /* min-width: 10rem; */
+  flex: 0 0 30%;
+  /* height: 100%; */
+  /* 
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 30px;
+  text-align: left;
+  min-width: 250px;
+  flex: 1;
+  flex-basis: calc(33.33% - 60px); */
+}
+
+.process-item-top {
+  position: relative;
+}
+
+.process-item-icon {
+  position: absolute;
+  font-size: var(--font-size-heading-xxl);
+  /* margin-block-start: -6.125rem; */
+  top: -100px;
+}
+.process-item-content {
+ 
+}
+.process-item-title {
+  font-size: var(--font-size-heading-sm);
+  margin-block-end: 0.5rem;
+  font-weight: 700;
+}
+.process-item-text {
+}
+
+
+@media (width <= 768px) {
+  .process-content {
+    flex-direction: column;
+  }
+
+  .process-elements {
+    padding-block: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
