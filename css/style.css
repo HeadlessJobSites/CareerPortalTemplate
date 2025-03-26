@@ -463,6 +463,10 @@
   background-color: var(--background-color-gray);
 }
 
+.process-container {
+  max-width: 1200px;
+}
+
 /* Container for gobi stroies on left, and cards on right */
 .process-content {
   display: flex;
@@ -529,5 +533,56 @@
     padding-block: 2rem;
     flex-wrap: nowrap;
     overflow-x: scroll;
+  }
+}
+
+.job-categories-section {
+}
+
+
+.section-container {
+}
+.job-categories-inner {
+}
+.job-categories-title {
+}
+.section-title {
+}
+.job-categories-content {
+  display: flex;
+  gap: 2rem;
+}
+.job-categories-item {
+  
+}
+.job-categories-item-image {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 250px;
+  min-width: 200px;
+  border-radius: 10px; 
+}
+.job-categories-item-content {
+}
+.job-categories-item-title {
+  font-size: var(--font-size-heading-sm);
+  margin-block: 1rem;
+  font-weight: 700;
+}
+.job-categories-item-text {
+}
+
+@media (width <= 768px) {
+  .job-categories-content {
+    padding-block: 2rem;
+    overflow-x: scroll;
+  }
+  .job-categories-container {
+    max-width: 540px;
+  } 
+  .job-categories-item {
+    flex: 0 0 70%;
+    max-width: 70%;
   }
 }
