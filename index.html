@@ -35,381 +35,398 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
 
-  <header class="site-header">
-    <div class="container">
-      <nav class="primary-nav">
-        <a class="header-logo" href="/" aria-label="Home">
-          <img class="header-logo-image" src="/files/TT-2.png" height="40" alt="Talentech Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="nav-inner" id="navbarNav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="/#jobs-anchor">Jobs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#ttteam">Meet the Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#recruitment-process">Recruitment Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="blank" href="https://talentech.com">talentech.com <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero section -->
-  <section class="hero-section">
-    <video playsinline autoplay loop muted class="hero-video">
-      <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-      <h1 class="hero-title">Join our <span class="text-bold">journey</span></h1>
-      <a class="btn btn-primary btn-lg" href="#jobs-anchor"><strong>See available positions</strong></a>
-    </div>
-  </section>
-
-  <!-- About company section -->
-  <section class="about-section" id="company-section">
-    <div class="container about-container section-container">
-      <div class="about-inner">
-        <div class="about-content">
-          <h2 class="about-title intro-title section-title">Life at <span style="font-weight: 800;">Talentech</span></h2>
-          <div class="about-text">
-            <p class="about-text-item">Talentech has set out to become the largest and most innovative HR tech company of its kind. The product suite today spans the entire talent pipeline from recruitment, to onboarding and talent management with our products Talent Recruiter, ReachMee, Webcruiter, Talmundo, Weekli, irecommend and ontame.</p>
-            <p class="about-text-item">We know that great HR makes a difference and we want to be a part of shaping the future with the vision that all companies should know that Talent Comes First. To reach our goals we need you! Talentech as a workplace is characterized by a lot of great and engaged colleges that really believe in what we do.</p>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="/" aria-label="Home">
+            <img class="header__logo-image" src="/files/TT-2.png" height="40" alt="Talentech Logo">
+          </a>
+          <button class="header__toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="header__toggler-icon"></span>
+          </button>
+          <div class="header__menu" id="navbarNav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="#jobs-anchor">Jobs</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#ttteam">Meet the Team</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#recruitment-process">Recruitment Process</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="https://talentech.com" target="_blank">talentech.com</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="video-container">
-          <video id="talentechVideo" class="section-video" playsinline autoplay loop muted>
-            <source src="./files/This-is-us-TT.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="video-controls">
-            <button class="video-controls-btn" id="muteBtn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
-          </div>
-        </div>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Feature (emploees) section -->
-  <section class="feature-section">
-    <div class="container feature-container section-container">
-      <div class="feature-inner">
-        <h2 class="feature-title section-title">Our <span style="font-weight: 800;">culture</span></h2>
-        <div class="feature-content">
-          <div class="feature-item">
-            <img class="feature-item-image" src="./files/TT-fabian-3.jpg" alt="Feature">
-            <div class="feature-item-text">
-              <h3 class="feature-item-title">Fabian Söderström</h3>
-              <p class="feature-item-subtitle">Advertising Manager</p>
-              <p class="feature-item-text">"Working on new products where my work has real impact on technical decision is really inspirational. At Talentech a programmer is more of a partner when it comes to decision making, so your voice is heard and that truly matters. But Talentech isn’t only work – it’s the people you work with - and that's the main reason why I love to work at Talentech."</p>
+    <!-- Hero section -->
+    <section class="hero">
+      <video class="hero__video" playsinline autoplay loop muted>
+        <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
+      </video>
+      <div class="hero__content">
+        <h1 class="hero__title">Join our <span class="hero__title--bold">journey</span></h1>
+        <a class="hero__btn btn btn--primary btn--large" href="#jobs-anchor"><strong>See available positions</strong></a>
+      </div>
+    </section>
+
+    <!-- About company section -->
+    <section class="about" id="company-section">
+      <div class="container about__container">
+        <div class="about__inner">
+          <div class="about__content">
+            <h2 class="about__title section-title">Life at <span class="about__title--highlight section-title--highlight">Talentech</span></h2>
+            <div class="about__text">
+              <p class="about__text-item">Talentech has set out to become the largest and most innovative HR tech company of its kind. The product suite today spans the entire talent pipeline from recruitment, to onboarding and talent management with our products Talent Recruiter, ReachMee, Webcruiter, Talmundo, Weekli, irecommend and ontame.</p>
+              <p class="about__text-item">We know that great HR makes a difference and we want to be a part of shaping the future with the vision that all companies should know that Talent Comes First. To reach our goals we need you! Talentech as a workplace is characterized by a lot of great and engaged colleges that really believe in what we do.
+
+              </p>
             </div>
           </div>
-          <div class="feature-item">
-            <img class="feature-item-image" src="./files/TT-carolina-1.jpg" alt="Feature">
-            <div class="feature-item-text">
-              <h3 class="feature-item-title">Fabian Söderström</h3>
-              <p class="feature-item-subtitle">Advertising Manager</p>
-              <p class="feature-item-text">"Working on new products where my work has real impact on technical decision is really inspirational. At Talentech a programmer is more of a partner when it comes to decision making, so your voice is heard and that truly matters. But Talentech isn’t only work – it’s the people you work with - and that's the main reason why I love to work at Talentech."</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <img class="feature-item-image" src="./files/TT-roger-1.jpg" alt="Feature">
-            <div class="feature-item-text">
-              <h3 class="feature-item-title">Fabian Söderström</h3>
-              <p class="feature-item-subtitle">Advertising Manager</p>
-              <p class="feature-item-text">"Working on new products where my work has real impact on technical decision is really inspirational. At Talentech a programmer is more of a partner when it comes to decision making, so your voice is heard and that truly matters. But Talentech isn’t only work – it’s the people you work with - and that's the main reason why I love to work at Talentech."</p>
+          <div class="about__video-wrapper">
+            <video class="about__video" playsinline autoplay loop muted>
+              <source src="./files/This-is-us-TT.mp4" type="video/mp4">
+            </video>
+            <div class="about__video-controls">
+              <button class="about__mute-btn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Quote section -->
-  <section class="quote-section">
-    <div class="container quote-container section-container">
-      <div class="quote-inner">
-        <blockquote class="blockquote">
-          <p class="blockquote-main">"Starting at Talentech, I immediately felt welcomed and part of a dynamic, innovative team."</p>
-          <p class="blockquote-footer">Henrik Moberg</p>
+    <!-- Culture (emploees) section -->
+    <section class="culture">
+      <div class="container culture__container">
+        <h2 class="culture__title section-title">Our <span class="culture__title--highlight section-title--highlight">culture</span></h2>
+        <div class="culture__list">
+
+          <article class="culture__item">
+            <img src="./files/TT-fabian-3.jpg" alt="Fabian Söderström" class="culture__image">
+            <div class="culture__content">
+              <h3 class="culture__name">Fabian Söderström</h3>
+              <p class="culture__role">Advertising Manager</p>
+              <blockquote class="culture__quote">“Working on new products where my work has real impact on technical decision is really inspirational. At Talentech a programmer is more of a partner when it comes to decision making, so your voice is heard and that truly matters. But Talentech isn’t only work – it’s the people you work with – and that’s the main reason why I love to work at Talentech.”</blockquote>
+            </div>
+          </article>
+
+          <article class="culture__item culture__item--reverse">
+            <img src="./files/TT-carolina-1.jpg" alt="Carolina Asp" class="culture__image">
+            <div class="culture__content">
+              <h3 class="culture__name">Carolina Asp</h3>
+              <p class="culture__role">Senior Implementation Consultant</p>
+              <blockquote class="culture__quote">“The biggest reason why I work at Talentech is the opportunity you have to evolve and constantly learn while working across countries, departments and with a wide range of different customers, all with their own experience and a goal to be as awesome as possible. Plus you have the most amazing colleagues. At Talentech new ideas are always welcome and there is always someone who can help in our team of ambitious Talentechers.”</blockquote>
+            </div>
+          </article>
+
+          <article class="culture__item">
+            <img src="./files/TT-roger-1.jpg" alt="Roger Larsson" class="culture__image">
+            <div class="culture__content">
+              <h3 class="culture__name">Roger Larsson</h3>
+              <p class="culture__role">Head of Group IT Operations</p>
+              <blockquote class="culture__quote">“I work with various projects both internally and externally, which helps to develop me both personally and professionally. We have a lot of social events and we have so much fun together across all departments.”</blockquote>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Quote section -->
+    <section class="quote">
+      <div class="container quote__container">
+        <blockquote class="quote__content">
+          <p class="quote__text">"Starting at Talentech, I immediately felt welcomed and part of a dynamic, innovative team."</p>
+          <footer class="quote__author">Henrik Moberg</footer>
         </blockquote>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Process (recruitment) section -->
-  <section class="process-section" id="process">
-    <div class="container process-container section-container">
-      <div class="process-inner">
-        <h2 class="process-title section-title">Our <span style="font-weight: 800;">recruitment process</span></h2>
-        <div class="process-content">
-          <div class="process-media-content">
-            <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
-
-            <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
-          </div>
-          <div class="process-elements">
-            <div class="process-item">
-              <div class="process-item-top">
-                <h3 class="process-item-icon">1</h3>
-              </div>
-              <div class="process-item-content">
-                <h3 class="process-item-title">Submit Your Application</h3>
-                <p class="process-item-text">Start your journey by applying through our career portal; upload your CV and share a bit about yourself.</p>
-              </div>
+    <!-- Process (recruitment) section -->
+    <section class="process" id="process">
+      <div class="process__container container section-container">
+        <div class="process__inner">
+          <h2 class="process__title section-title">Our <span class="process__title--highlight" style="font-weight: 800;">recruitment process</span></h2>
+          <div class="process__content">
+            <div class="process__media">
+              <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
+              <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
             </div>
-            <div class="process-item">
-              <div class="process-item-top">
-                <h3 class="process-item-icon">2</h3>
+            <div class="process__steps">
+              <div class="process__step">
+                <div class="process__step-header">
+                  <h3 class="process__step-icon">1</h3>
+                </div>
+                <div class="process__step-body">
+                  <h3 class="process__step-title">Submit Your Application</h3>
+                  <p class="process__step-text">Start your journey by applying through our career portal; upload your CV and share a bit about yourself.</p>
+                </div>
               </div>
-              <div class="process-item-content">
-                <h3 class="process-item-title">Initial Screening</h3>
-                <p class="process-item-text">We will review your application to assess the alignment between your skills and the job requirements.
-
-                </p>
+              <div class="process__step">
+                <div class="process__step-header">
+                  <h3 class="process__step-icon">2</h3>
+                </div>
+                <div class="process__step-body">
+                  <h3 class="process__step-title">Initial Screening</h3>
+                  <p class="process__step-text">We will review your application to assess the alignment between your skills and the job requirements.</p>
+                </div>
               </div>
-            </div>
-            <div class="process-item">
-              <div class="process-item-top">
-                <h3 class="process-item-icon">3</h3>
+              <div class="process__step">
+                <div class="process__step-header">
+                  <h3 class="process__step-icon">3</h3>
+                </div>
+                <div class="process__step-body">
+                  <h3 class="process__step-title">Interview Process</h3>
+                  <p class="process__step-text">Engage with us through one or more interviews to discuss your experiences, skills, and aspirations.</p>
+                </div>
               </div>
-              <div class="process-item-content">
-                <h3 class="process-item-title">Interview Process</h3>
-                <p class="process-item-text">Engage with us through one or more interviews to discuss your experiences, skills, and aspirations.</p>
+              <div class="process__step">
+                <div class="process__step-header">
+                  <h3 class="process__step-icon">4</h3>
+                </div>
+                <div class="process__step-body">
+                  <h3 class="process__step-title">Assessment</h3>
+                  <p class="process__step-text">Depending on the role, you may be invited to complete assignments or assessments to showcase your capabilities.</p>
+                </div>
               </div>
-            </div>
-            <div class="process-item">
-              <div class="process-item-top">
-                <h3 class="process-item-icon">4</h3>
-              </div>
-              <div class="process-item-content">
-                <h3 class="process-item-title">Assessment</h3>
-                <p class="process-item-text">Depending on the role, you may be invited to complete assignments or assessments to showcase your capabilities.</p>
-              </div>
-            </div>
-            <div class="process-item">
-              <div class="process-item-top">
-                <h3 class="process-item-icon">5</h3>
-              </div>
-              <div class="process-item-content">
-                <h3 class="process-item-title">Offer & Onboarding</h3>
-                <p class="process-item-text">If it's a match, we'll extend an offer. Once accepted, we'll guide you through every step of your onboarding journey.</p>
+              <div class="process__step">
+                <div class="process__step-header">
+                  <h3 class="process__step-icon">5</h3>
+                </div>
+                <div class="process__step-body">
+                  <h3 class="process__step-title">Offer & Onboarding</h3>
+                  <p class="process__step-text">If it's a match, we'll extend an offer. Once accepted, we'll guide you through every step of your onboarding journey.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Job categories (areas of business) section -->
-  <section class="job-categories-section">
-    <div class="container job-categories-container section-container">
-      <div class="job-categories-inner">
-        <h2 class="job-categories-title section-title">Job <span style="font-weight: 800;">categories</span></h2>
-        <div class="job-categories-content">
-          <div class="job-categories-item">
-            <img class="job-categories-item-image" src="./files/cat-1.jpg" alt="Job Category">
-            <div class="job-categories-item-content">
-              <h3 class="job-categories-item-title">Software Development</h3>
-              <p class="job-categories-item-text">Join our Software Development team to innovate and build cutting-edge technology solutions that revolutionize talent management.</p>
+    <!-- Job categories (areas of business) section -->
+    <section class="categories">
+      <div class="container categories__container">
+        <h2 class="categories__title section-title">
+          Job <span class="categories__title--highlight section-title--highlight">categories</span>
+        </h2>
+
+        <div class="categories__list">
+          <div class="categories__item">
+            <img class="categories__image" src="./files/cat-1.jpg" alt="Software Development">
+            <div class="categories__content">
+              <h3 class="categories__name">Software Development</h3>
+              <p class="categories__description">
+                Join our Software Development team to innovate and build cutting-edge technology solutions that revolutionize talent management.
+              </p>
             </div>
           </div>
-          <div class="job-categories-item">
-            <img class="job-categories-item-image" src="./files/cat-2.jpg" alt="Job Category">
-            <div class="job-categories-item-content">
-              <h3 class="job-categories-item-title">Customer Success</h3>
-              <p class="job-categories-item-text">Be a part of our Customer Success team, where your efforts directly contribute to our clients' growth and satisfaction.</p>
+
+          <div class="categories__item">
+            <img class="categories__image" src="./files/cat-2.jpg" alt="Customer Success">
+            <div class="categories__content">
+              <h3 class="categories__name">Customer Success</h3>
+              <p class="categories__description">
+                Be a part of our Customer Success team, where your efforts directly contribute to our clients' growth and satisfaction.
+              </p>
             </div>
           </div>
-          <div class="job-categories-item">
-            <img class="job-categories-item-image" src="./files/cat-3.jpg" alt="Job Category">
-            <div class="job-categories-item-content">
-              <h3 class="job-categories-item-title">Sales and Marketing
 
-              </h3>
-              <p class="job-categories-item-text">Drive growth and build meaningful relationships in our Sales and Marketing team, connecting clients with the solutions they need.</p>
+          <div class="categories__item">
+            <img class="categories__image" src="./files/cat-3.jpg" alt="Sales and Marketing">
+            <div class="categories__content">
+              <h3 class="categories__name">Sales and Marketing</h3>
+              <p class="categories__description">
+                Drive growth and build meaningful relationships in our Sales and Marketing team, connecting clients with the solutions they need.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Benefits section -->
-  <section class="benefits-section" id="benefits">
-    <div class="container benefits-container section-container">
-      <div class="benefits-inner">
-        <h2 class="benefits-title section-title">Some of our <span style="font-weight: 800;">local Benefits</span></h2>
-        <div class="benefits-content">
-          <div class="benefits-item">
-            <div class="benefits-item-icon">
+
+    <!-- Benefits section -->
+    <section class="benefits">
+      <div class="container benefits__container">
+        <h2 class="benefits__title section-title">
+          Some of our <span class="benefits__title--highlight section-title--highlight">local Benefits</span>
+        </h2>
+
+        <div class="benefits__list">
+          <div class="benefits__item">
+            <div class="benefits__icon">
               <i class="fa-solid fa-display-code"></i>
             </div>
-            <div class="benefits-item-content">
-              <h4 class="benefits-item-title">Home office</h4>
-              <p class="benefits-item-text">You get necessary equipment for your home office</p>
-            </div>
+            <h3 class="benefits__name">Home office</h3>
+            <p class="benefits__description">You get necessary equipment for your home office</p>
           </div>
-          <div class="benefits-item">
-            <div class="benefits-item-icon">
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
               <i class="fa-solid fa-notes-medical"></i>
             </div>
-            <div class="benefits-item-content">
-              <h4 class="benefits-item-title">Wellness</h4>
-              <p class="benefits-item-text">Health allowance for gym memberships, etc</p>
-            </div>
+            <h3 class="benefits__name">Wellness</h3>
+            <p class="benefits__description">Health allowance for gym memberships, etc</p>
           </div>
-          <div class="benefits-item">
-            <div class="benefits-item-icon">
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
               <i class="fa-solid fa-laptop"></i>
             </div>
-            <div class="benefits-item-content">
-              <h4 class="benefits-item-title">PC or Mac</h4>
-              <p class="benefits-item-text">Choose your preferred work equipment</p>
-            </div>
+            <h3 class="benefits__name">PC or Mac</h3>
+            <p class="benefits__description">Choose your preferred work equipment</p>
           </div>
-          <div class="benefits-item">
-            <div class="benefits-item-icon">
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
               <i class="fa-solid fa-map-location-dot"></i>
             </div>
-            <div class="benefits-item-content">
-              <h4 class="benefits-item-title">Vacation days</h4>
-              <p class="benefits-item-text">Enjoy additional vacation days beyond market norms</p>
-            </div>
+            <h3 class="benefits__name">Vacation days</h3>
+            <p class="benefits__description">Enjoy additional vacation days beyond market norms</p>
           </div>
-          <div class="benefits-item">
-            <div class="benefits-item-icon">
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
               <i class="fa-solid fa-house-building"></i>
             </div>
-            <div class="benefits-item-content">
-              <h4 class="benefits-item-title">Hybrid work</h4>
-              <p class="benefits-item-text">Work both from our nice offices as well as remote</p>
-            </div>
+            <h3 class="benefits__name">Hybrid work</h3>
+            <p class="benefits__description">Work both from our nice offices as well as remote</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Map section -->
-  <section class="map-section">
-    <div id="mapid" style="height: 400px; overflow: hidden;"></div>
-  </section>
 
-  <!-- Available jobs section -->
-  <section class="jobs-section" id="available-jobs">
-    <div class="container jobs-container section-container">
-      <div class="jobs-inner">
-        <h2 class="jobs-title section-title">Available <span style="font-weight: 800;">jobs</span></h2>
-        <div class="jobs-content">
-          <div class="jobs-dropdown-filters">
-            <div class="jobs-dropdown-filters-item jobs-location-filter">
-              <label for="locationFilter">Location</label>
-              <select id="locationFilter" class="form-control">
-                <option value="All">All locations</option>
-                <!-- Location options will be dynamically added here -->
-              </select>
-            </div>
-            <div class="jobs-dropdown-filters-item jobs-type-filter">
-              <label for="jobTypeFilter">Job type</label>
-              <select id="jobTypeFilter" class="form-control">
-                <option value="All">All job types</option>
-                <!-- Job type options will be dynamically added here -->
-              </select>
-            </div>
+    <!-- Map section -->
+    <section class="map">
+      <div class="map__container" id="mapid" style="height: 400px;"></div>
+    </section>
+
+    <!-- Available jobs section -->
+    <section class="jobs" id="available-jobs">
+      <div class="container jobs__container">
+        <h2 class="jobs__title section-title">
+          Available <span class="jobs__title--highlight section-title--highlight">jobs</span>
+        </h2>
+
+        <div class="jobs__filters">
+          <div class="jobs__filter-group">
+            <label for="locationFilter" class="jobs__filter-label">Location</label>
+            <select id="locationFilter" class="jobs__filter-select">
+              <option value="All">All locations</option>
+            </select>
           </div>
-          <div id="jobList" class="jobs-list"></div>
-          <button id="loadMore" class="btn btn-primary load-more-btn">Load more</button>
+
+          <div class="jobs__filter-group">
+            <label for="jobTypeFilter" class="jobs__filter-label">Job type</label>
+            <select id="jobTypeFilter" class="jobs__filter-select">
+              <option value="All">All job types</option>
+            </select>
+          </div>
         </div>
+
+        <div class="jobs__list" id="jobList">
+          <!-- Jobs will be dynamically injected here -->
+        </div>
+
+        <button id="loadMore" class="btn btn--primary jobs__load-more">Load more</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Subscription section -->
-  <section class="subscription-section" id="subscription">
-    <div class="container subscription-container section-container">
-      <div class="subscription-inner">
-        <h2 class="subscription-title section-title">Couldn't find the job you were looking for?</h2>
-        <div class="subscription-content">
-          <p class="subscription-text">Sign up and you'll get an e-mail when there is any position available similar to your prenumeration.</p>
-          <button id="agent" class="btn btn-primary" style="font-weight:800">Sign up</button>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-inner">
-        <img class="footer-image logo" src="./files/TT-2.png" alt="Talentech Logo">
-        <div class="footer-content">
-          <p class="footer-text">Talentech facilitates the full talent journey on a scalable platform with a tailored ecosystem of HR tech solutions.</p>
-        </div>
-        <div class="footer-links">
-          <a href="https://www.facebook.com/talentechnorway"><img src="./files/TT-f.svg" alt="Icon" class="footer-links-item"></a>
-          <a href="https://www.linkedin.com/company/talentech-norway"><img src="./files/TT-l.svg" alt="Icon" class="footer-links-item"></a>
-          <a href="https://talentech.com/no/kontakt"><img src="./files/TT-e.svg" alt="Icon" class="footer-links-item"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Powered by Talentech subfooter -->
-  <section class="powered-by">
-    <div class="container powered-by-container">
-      <div class="powered-by-inner">
-        <div class="powered-by-info">
-          <span class="powered-by-info-start">Powered by</span>
-          <a class="powered-by-info-logo" href="https://talentech.com"><img src="./files/TT-fav.svg" alt="Talentech Logo"></a>
-          <a class="powered-by-info-link" href="https://talentech.com"><span class="powered-by-info-name">Talentech</span></a>
-        </div>
-        <div class="powered-by-share">
-          <div class="powere-by-share-text">Share on social media:</div>
-          <span class="powered-by-share-inner">
-            <a href="#" id="facebook-share-link" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Share on Facebook" width="16" height="16">
-            </a>
-            <a href="#" id="twitter-share-link" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="Share on X" width="16" height="16">
-            </a>
-            <a href="#" id="linkedin-share-link" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="Share on LinkedIn" width="16" height="16">
-            </a>
-          </span>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Modal window -->
-  <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+    <!-- Subscription section -->
+    <section class="subscription" id="subscription">
+      <div class="container subscription__container">
+        <div class="subscription__inner">
+          <h2 class="subscription__title section-title">
+            Couldn't find the job you were looking for?
+          </h2>
+          <p class="subscription__text">
+            Sign up and you'll get an e-mail when there is any position available similar to your prenumeration.
+          </p>
+          <button id="agent" class="btn btn--primary subscription__button">
+            <strong>Sign up</strong>
           </button>
         </div>
-        <div class="modal-body">
-          <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <img class="footer__logo" src="./files/TT-2.png" alt="Talentech Logo">
+          <p class="footer__description">
+            Talentech facilitates the full talent journey on a scalable platform<br>
+            with a tailored ecosystem of HR tech solutions.
+          </p>
+          <div class="footer__links">
+            <a href="https://www.facebook.com/talentechnorway" class="footer__link" target="_blank" aria-label="Facebook">
+              <img src="./files/TT-f.svg" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/talentech-norway" class="footer__link" target="_blank" aria-label="LinkedIn">
+              <img src="./files/TT-l.svg" alt="LinkedIn">
+            </a>
+            <a href="https://talentech.com/no/kontakt" class="footer__link" target="_blank" aria-label="Email">
+              <img src="./files/TT-e.svg" alt="Email">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Powered by Talentech subfooter -->
+    <section class="powered">
+      <div class="powered__container">
+        <div class="powered__inner">
+          <div class="powered__info">
+            <span class="powered__label">Powered by</span>
+            <a href="https://talentech.com" class="powered__logo" aria-label="Talentech logo">
+              <img src="./files/TT-fav.svg" alt="Talentech logo">
+            </a>
+            <a href="https://talentech.com" class="powered__name">Talentech</a>
+          </div>
+          <div class="powered__share">
+            <span class="powered__share-label">Share on social media:</span>
+            <div class="powered__share-links">
+              <a href="#" class="powered__share-link" aria-label="Facebook">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="#" class="powered__share-link" aria-label="X">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="X" />
+              </a>
+              <a href="#" class="powered__share-link" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Modal window -->
+    <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
