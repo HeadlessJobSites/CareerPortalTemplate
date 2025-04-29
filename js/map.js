@@ -17,7 +17,7 @@ export function initMap() {
   }).addTo(map);
 
   const customIcon = L.icon({
-    iconUrl: '/files/TT-fav.svg',
+    iconUrl: '../files/TT-fav.svg',
     iconSize: [38, 95],
     iconAnchor: [22, 50],
     popupAnchor: [1, -15]

@@ -95,20 +95,21 @@ function createJobCard(job) {
   const orgName = job.organizations?.[1]?.nameorgunit || job.organizations?.[0]?.nameorgunit || 'Not specified';
 
   const div = document.createElement('div');
-  div.className = 'col-12 col-md-4 col-lg-4 mb-4';
+  div.className = 'job-card';
+
   div.innerHTML = `
-    <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;" aria-label="Job details">
-        <div class="card h-100">
-            <div class="card-body">
-              <div class="card-category"><span>${orgName}</span></div>
-              <div class="card-title">${job.title}</div>
-              <p class="card-text">${job.country}</p>
-              <a href="${jobDetailUrl}" class="stretched-link">
-                  <img src="/files/arrow-right-thin.svg" class="stretched-link" alt="Details">
-              </a>
-            </div>
-        </div>
-    </a>
+  <a href="${jobDetailUrl}" class="job-card__link" aria-label="Job details">
+    <div class="job-card__container">
+      <div class="job-card__body">
+        <div class="job-card__category"><span>${orgName}</span></div>
+        <div class="job-card__title">${job.title}</div>
+        <div class="job-card__location">${job.country}</div>
+        <a href="${jobDetailUrl}" class="job-card__arrow" aria-hidden="true" tabindex="-1">
+          <img src="/files/arrow-right-thin.svg" alt="Details">
+        </a>
+      </div>
+    </div>
+  </a>
   `;
   return div;
 }
