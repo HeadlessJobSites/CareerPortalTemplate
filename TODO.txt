@@ -1,0 +1,5 @@
+- media queries in root
+- navbar
+- images
+- check spaces
+- modal
