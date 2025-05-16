@@ -50,56 +50,56 @@
 @layer fonts {
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-UltraLight.ttf');
+    src: url('../assets/fonts/Telegraf-UltraLight.ttf');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-Light.ttf');
+    src: url('../assets/fonts/Telegraf-Light.ttf');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-Regular.ttf');
+    src: url('../assets/fonts/Telegraf-Regular.ttf');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-Medium.ttf');
+    src: url('../assets/fonts/Telegraf-Medium.ttf');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-SemiBold.ttf');
+    src: url('../assets/fonts/Telegraf-SemiBold.ttf');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-Bold.ttf');
+    src: url('../assets/fonts/Telegraf-Bold.ttf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-UltraBold.ttf');
+    src: url('../assets/fonts/Telegraf-UltraBold.ttf');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Telegraf';
-    src: url('../fonts/Telegraf-Black.ttf');
+    src: url('../assets/fonts/Telegraf-Black.ttf');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
